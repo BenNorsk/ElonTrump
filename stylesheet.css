@@ -1,0 +1,93 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;600;700&family=Noto+Sans+Display&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&family=Roboto:wght@100&display=swap');
+
+
+/* Implement Gradient */
+body {
+	background: linear-gradient(-45deg, #f1840e, #00c7ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Jost", "sans-serif";
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Core Container */
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100,100,100,0.3);
+    color: #fafafa;
+    font-size: large;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* App Icon */
+.app-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Jost", "sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 0.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
